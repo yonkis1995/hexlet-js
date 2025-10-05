@@ -1,3 +1,3 @@
-import _ from "lodash";
-console.log("Hello, Hexlet!");
-console.log(_.last(["one", "two"]));
+import myFunction from "./src/index";
+
+myFunction();
