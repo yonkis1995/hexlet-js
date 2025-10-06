@@ -1,3 +1,3 @@
-import myFunction from "./src/index";
+import myFunction from './src/index'
 
-myFunction();
+myFunction()
