@@ -1,0 +1,26 @@
+name: Node.js CI # Имя процесса
+
+on: push # Когда запускать: на каждый пуш
+
+jobs:
+  build:
+    runs-on: ubuntu-latest # где запускать: на виртуальной машине Ubuntu
+
+    steps:
+      # Клонируем репозиторий
+      - uses: actions/checkout@v4
+
+      # Ставим Node.js
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # Ставим зависимости
+      - run: npm ci
+
+      # Запускаем линтер
+      # Если есть скрипт "lint" в package.json
+      - run: npm run lint
+
+      # Запускаем тесты
+      - run: npm test
