@@ -1,1 +1,3 @@
+[![Node.js CI](https://github.com/yonkis1995/hexlet-js/actions/workflows/main.yml/badge.svg)](https://github.com/yonkis1995/hexlet-js/actions/workflows/main.yml)
+
 Мой первый проект на Хекслете
